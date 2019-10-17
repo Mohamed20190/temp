@@ -1,0 +1,19 @@
+<!--Banner Content-->
+<div id="banner-content" class="row clearfix">
+  <div class="col-38" *ngFor="let hero of heros">
+    <div class="section-heading">
+      <h1>{{ hero.heading }}</h1>
+      <h2>
+        {{ hero.headingText }}
+      </h2>
+    </div>
+
+    <!--Call to Action-->
+    <a href="{{ hero.buttonLink }}" class="button">{{ hero.buttonText }}</a>
+    <!--End Call to Action-->
+  </div>
+  <div class="service-error" *ngIf="heroError">
+    <h2>{{ heroError.errorTitle }}</h2>
+    <h3>{{ heroError.errorDesc }}</h3>
+  </div>
+</div>

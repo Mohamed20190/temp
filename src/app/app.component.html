@@ -1,0 +1,12 @@
+<app-header></app-header>
+<!--Main Content Area-->
+<main id="content">
+  <app-intro *ngIf="router.url == '/'"></app-intro>
+  <app-gallery *ngIf="router.url == '/'"></app-gallery>
+  <app-services *ngIf="router.url == '/'"></app-services>
+  <app-testimonials *ngIf="router.url == '/'"></app-testimonials>
+  <app-clients *ngIf="router.url == '/'"></app-clients>
+  <app-packages *ngIf="router.url == '/'"></app-packages>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</main>
